@@ -47,9 +47,9 @@ nav ul li {
     text-transform: uppercase;
 }
 
-nav ul li a:visited, a:link, a:active {
-    text-decoration: none;
+nav ul a:visited, a:link, a:active {
     color: white;
+    text-decoration: none;
 }
 
 nav ul li:hover {
@@ -59,7 +59,8 @@ nav ul li:hover {
 }
 
 .page-content {
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .page-content header {
@@ -69,36 +70,36 @@ nav ul li:hover {
     justify-content: space-between;
 }
 
-.page-content header .text{
+.page-content header .presentation-text{
     max-width: 75%;
     margin-left: 10px;
 }
 
-.page-content header .text h1 {
+.page-content header .presentation-text h1 {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
 }
 
-.page-content header .text h1:hover{
+.page-content header .presentation-text h1:hover{
     color: beige;
 }
 
-.page-content header .text p {
+.page-content header .presentation-text p {
     text-align: justify;
     max-width: 92%;
     font-size: 20px;
     line-height: 30px;
 }
 
-.page-content header .text p:hover{
+.page-content header .presentation-text p:hover{
     color: beige;
 }
 
-.page-content header .img img{
+.page-content header .memoji img{
     width: 350px;
     height: 350px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .sep hr {
@@ -112,6 +113,70 @@ nav ul li:hover {
 
 .sep hr:hover {
     border: 4px solid beige;
+}
+
+.data-ia {
+    margin: 6%;
+}
+
+.data-ia .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.data-ia .data-ia-image{
+    display: flex;
+    width: 640px;
+    height: 360px;
+}
+
+.data-ia .data-ia-text h1{
+    text-align: right;
+    margin: 0%;
+    padding-top: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.data-ia .data-ia-text h1:hover{
+    color: beige;
+}
+
+.data-ia .data-ia-text p{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+.data-ia .data-ia-text p:hover{
+    color: beige;
+}
+
+footer {
+    margin-bottom: 3%;
+}
+
+footer .colonne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer a{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+footer a:visited, a:link, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color:beige;
 }
 
 @media screen and (max-width : 700px) {
