@@ -12,7 +12,7 @@
     <body>
         <nav>
             <div class="profile">
-                <h1>Portfolio © 2022</h1>
+                <h1>Charles fisman | Portfolio © 2022</h1>
             </div>
             <ul>
                 <a href="index.html"><li>Accueil</li></a>
@@ -21,9 +21,25 @@
                 <a href="prop.html"><li>A propos</li></a>
             </ul>
         </nav>
-        <section class="sep">
-            <hr>
-        </section>
+        <span class="Sphere"></span>
+        <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+        <script>
+            const Texts = [
+                'HTML', 'MONGODB','CSS', 'FLASK',
+                'C', 'C++', 'SQL', 'LABVIEW',
+                'PYTHON', 'JS', 'DJANGO',
+                'IOT','TABLEAU', 'IA',
+                'ML', 'MYSQL', 'DATA', 'JAVA'
+            ];
+    
+            var tagCloud = TagCloud('.Sphere', Texts, {
+                radius: 250,
+                maxSpeed: 'normal',
+                initSpeed: 'fast',
+                direction: 135,
+                keep: true
+            });
+        </script>
         <footer>
             <div class="colonne">
                 <a href="mailto: fismanc@gmail.com"><i class="fa-solid fa-square-envelope fa-3x"></i></a>
